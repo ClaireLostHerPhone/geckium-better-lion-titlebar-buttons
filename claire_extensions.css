@@ -1,0 +1,90 @@
+:root[geckium-twentyone][gktitbuttons=macosx] .titlebar-button {
+    height: 16px;
+    width: 16px;
+    margin: -1px !important;
+    background-image: none !important;
+    box-shadow: none;
+}
+
+:root[geckium-twentyone][gktitbuttons="macosx"] .titlebar-close:not([disabled]),
+:root[geckium-twentyone][gktitbuttons="macosx"] .titlebar-restore:not([disabled]),
+:root[geckium-twentyone][gktitbuttons="macosx"] .titlebar-max:not([disabled]),
+:root[geckium-twentyone][gktitbuttons="macosx"] .titlebar-min:not([disabled]) {
+    background-color: transparent !important;
+    list-style-image: none !important;
+    fill: none !important;
+}
+
+:root[geckium-twentyone][gktitbuttons=macosx] .titlebar-button:not([disabled]):active::after {
+    background: transparent;
+}
+
+:root[geckium-twentyone][gktitbuttons="macosx"]:-moz-window-inactive .titlebar-buttonbox:not(:hover, :active) .titlebar-button,
+:root[geckium-twentyone][gktitbuttons="macosx"] .titlebar-button[disabled] {
+    background: url(chrome://userchrome/content/claire/titlebar/close-inactive.png) !important;
+}
+
+
+:root[geckium-twentyone][gktitbuttons="macosx"]:-moz-window-inactive .titlebar-buttonbox:not(:hover, :active) .titlebar-button.titlebar-close {
+    background: url(chrome://userchrome/content/claire/titlebar/close-inactive.png) !important;
+}
+
+:root[geckium-twentyone][gktitbuttons="macosx"] .titlebar-close[disabled] {
+    background: url(chrome://userchrome/content/claire/titlebar/close-disabled.png) !important;
+}
+
+:root[geckium-twentyone][gktitbuttons="macosx"]:-moz-window-inactive .titlebar-buttonbox:not(:hover, :active) .titlebar-button.titlebar-max,
+:root[geckium-twentyone][gktitbuttons="macosx"]:-moz-window-inactive .titlebar-buttonbox:not(:hover, :active) .titlebar-button.titlebar-restore {
+    background: url(chrome://userchrome/content/claire/titlebar/maximize-inactive.png) !important;
+}
+
+:root[geckium-twentyone][gktitbuttons="macosx"] .titlebar-max[disabled],
+:root[geckium-twentyone][gktitbuttons="macosx"] .titlebar-restore[disabled] {
+    background: url(chrome://userchrome/content/claire/titlebar/maximize-disabled.png) !important;
+}
+
+:root[geckium-twentyone][gktitbuttons="macosx"]:-moz-window-inactive .titlebar-buttonbox:not(:hover, :active) .titlebar-button.titlebar-min {
+    background: url(chrome://userchrome/content/claire/titlebar/minimize-inactive.png) !important;
+}
+
+:root[geckium-twentyone][gktitbuttons="macosx"] .titlebar-min[disabled] {
+    background: url(chrome://userchrome/content/claire/titlebar/minimize-disabled.png) !important;
+}
+
+:root[gktitbuttons="macosx"] .titlebar-close:not([disabled]) {
+    background: url(chrome://userchrome/content/claire/titlebar/close-normal.png) !important;
+    list-style-image: none !important;
+}
+
+:root[gktitbuttons="macosx"] .titlebar-max:not([disabled]),
+:root[gktitbuttons="macosx"] .titlebar-restore:not([disabled]) {
+    background: url(chrome://userchrome/content/claire/titlebar/maximize-normal.png) !important;
+    list-style-image: none !important;
+}
+
+:root[gktitbuttons="macosx"] .titlebar-min:not([disabled]) {
+    background: url(chrome://userchrome/content/claire/titlebar/minimize-normal.png) !important;
+    list-style-image: none !important;
+}
+
+:root[gktitbuttons=macosx] .titlebar-buttonbox:hover > .titlebar-close:not([disabled]) {
+    background: url(chrome://userchrome/content/claire/titlebar/close-hover.png) !important;
+}
+:root[gktitbuttons=macosx] .titlebar-buttonbox:hover > .titlebar-min:not([disabled]) {
+    background: url(chrome://userchrome/content/claire/titlebar/minimize-hover.png) !important;
+}
+:root[gktitbuttons=macosx] .titlebar-buttonbox:hover > .titlebar-max:not([disabled]),
+:root[gktitbuttons=macosx] .titlebar-buttonbox:hover > .titlebar-restore:not([disabled]) {
+    background: url(chrome://userchrome/content/claire/titlebar/maximize-hover.png) !important;
+}
+
+:root[gktitbuttons=macosx] .titlebar-buttonbox > .titlebar-close:not([disabled]):active {
+    background: url(chrome://userchrome/content/claire/titlebar/close-pressed.png) !important;
+}
+:root[gktitbuttons=macosx] .titlebar-buttonbox > .titlebar-min:not([disabled]):active {
+    background: url(chrome://userchrome/content/claire/titlebar/minimize-pressed.png) !important;
+}
+:root[gktitbuttons=macosx] .titlebar-buttonbox > .titlebar-max:not([disabled]):active,
+:root[gktitbuttons=macosx] .titlebar-buttonbox > .titlebar-restore:not([disabled]):active {
+    background: url(chrome://userchrome/content/claire/titlebar/maximize-pressed.png) !important;
+}
